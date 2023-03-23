@@ -1,7 +1,9 @@
 <p align='center'>
+   🚧 项目正在施工...  🚧
+</p>
+<p align='center'>
     <img src='https://user-images.githubusercontent.com/50035229/227083599-5b674cab-f780-485f-863c-e29d87437ea7.png' alt='' width='800'/>
 </p>
-
 <br>
 <p align='center'>
 	Vue3 + Vite + Tailwindcss
@@ -12,7 +14,11 @@
 </p>
 
 
+
+
 ## 项目开发
+
+
 
 #### 后端部分
 获取 `Openai Api Key` 或 `accessToken` 并填写本地环境变量, [更多其他环境变量的介绍](#环境变量)
