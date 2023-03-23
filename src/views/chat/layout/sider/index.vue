@@ -31,7 +31,9 @@ const getMobileClass = computed<CSSProperties>(() => {
       zIndex: 50,
     }
   }
-  return {}
+  return {
+
+  }
 })
 
 const mobileSafeArea = computed(() => {
@@ -60,10 +62,11 @@ watch(
     :collapsed="collapsed"
     :collapsed-width="0"
     :width="260"
-    :show-trigger="isMobile ? false : 'arrow-circle'"
+    :show-trigger="false"
     collapse-mode="transform"
     position="absolute"
     bordered
+    class=" dark hidden bg-gray-900 md:fixed md:inset-y-0 md:flex md:w-[260px] md:flex-col"
     :style="getMobileClass"
     @update-collapsed="handleUpdateCollapsed"
   >
@@ -87,7 +90,7 @@ watch(
     </div>
   </NLayoutSider>
   <template v-if="isMobile">
-    <div v-show="!collapsed" class="fixed inset-0 z-40 bg-black/40" @click="handleUpdateCollapsed" />
+    <div v-show="!collapsed" class="fixed inset-0 z-40" @click="handleUpdateCollapsed" />
   </template>
   <PromptStore v-model:visible="show" />
 </template>

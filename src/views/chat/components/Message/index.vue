@@ -80,7 +80,7 @@ function handleRegenerate() {
 <template>
   <div
     ref="messageRef"
-    class="flex w-full mb-6 overflow-hidden"
+    class="flex w-full mb-6 overflow-hidden bg-gray-800"
     :class="[{ 'flex-row-reverse': inversion }]"
   >
     <div

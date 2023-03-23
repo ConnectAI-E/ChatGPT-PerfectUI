@@ -446,9 +446,9 @@ const buttonDisabled = computed(() => {
 })
 
 const footerClass = computed(() => {
-  let classes = ['p-4']
+  let classes = ['p-4', 'bg-gray-800']
   if (isMobile.value)
-    classes = ['sticky', 'left-0', 'bottom-0', 'right-0', 'p-2', 'pr-3', 'overflow-hidden']
+    classes = ['sticky', 'left-0', 'bottom-0', 'right-0', 'p-2', 'pr-3', 'overflow-hidden', 'bg-gray-800']
   return classes
 })
 
@@ -476,11 +476,11 @@ onUnmounted(() => {
       <div
         id="scrollRef"
         ref="scrollRef"
-        class="h-full overflow-hidden overflow-y-auto"
+        class="h-full overflow-hidden overflow-y-auto bg-gray-800"
       >
         <div
           id="image-wrapper"
-          class="w-full max-w-screen-xl m-auto dark:bg-[#101014]"
+          class="w-full max-w-screen-xl m-auto dark:bg-gray-800"
           :class="[isMobile ? 'p-2' : 'p-4']"
         >
           <template v-if="!dataSources.length">
