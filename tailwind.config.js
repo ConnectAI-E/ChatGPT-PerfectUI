@@ -7,6 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        error: 'var(--color-error)',
+      },
+      gradientColorStops: {
+        primary: 'var(--gradient-primary)',
+      },
+      textColor: {
+        primary: 'var(--text-primary)',
+        default: 'var(--text-default)',
+        secondary: 'var(--text-secondary)',
+        disabled: 'var(--text-disabled)',
+        error: 'var(--text-error)',
+      },
       animation: {
         blink: 'blink 1.2s infinite steps(1, start)',
       },
